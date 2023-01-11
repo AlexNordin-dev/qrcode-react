@@ -1,9 +1,10 @@
+/*_________________Butto______________________ */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.btn-skapa{
+.btn-skapa{    
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -12,7 +13,7 @@
     margin: 20px;
     height: 55px;
     text-align:center;
-    border: none;
+    border-color:  lightyellow;
     background-size: 300% 100%;
 
     border-radius: 50px;
@@ -46,4 +47,27 @@
 .btn-skapa.color-3 {
     background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+/*_________________End Button______________________ */
+
+.input-Form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(223, 222, 224);
+}
+
+.div-btn{    
+    display: flex;
+    align-items: flex-end;        
+    justify-content: flex-end;
+    margin-top: auto;
+    width: 100%;  
+  
+}
+
+.input-url{
+  width: 300px;
 }

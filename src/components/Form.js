@@ -4,13 +4,16 @@ import './Form.css';
 
 const Form = () => {
     return (
-        <div>
-            <label htmlFor=""> Your URL:</label> <br />
-            <input type="url" placeholder="https://hej.se"></input>
+        <div className="input-Form">
 
-            <div>
+            <div className="div-input">
+                <label htmlFor="">Din URL: </label> <br />
+                <input type="url" placeholder="https://github.com" className="input-url"></input>
                 <InputColor />
                 <InputSize />
+            </div>
+
+            <div className="div-btn">
                 <button className="btn-skapa color-3">Skapa</button>
             </div>
         </div>

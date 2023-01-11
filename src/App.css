@@ -1,28 +1,78 @@
+/*  Font fråm Google Font --- font-family: 'Roboto'*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 .App {
   display: flex;
-  text-align: center;
-  justify-content: center;
   flex-direction: row;
   margin: 20px;
   padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.qrcode-imput{
+.qrcode-input {
   display: flex;
-  text-align: start;
-  justify-content: start;  
-  flex-direction: column;
-  margin: 20px;
-  padding: 20px;
+  margin: 5px;
+  padding: 5px;
   background-color: antiquewhite;
   flex-grow: 2;
 }
-.qrcode-output{
+
+.qrcode-output {
   display: flex;
   text-align: center;
-  justify-content: center;  
-  margin: 20px;
-  padding: 20px;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
   background-color: rgb(138, 143, 143);
   flex-grow: 1;
 }
+
+/*-----------------------------------
+============Mobile Screen============ 
+-----------------------------------*/
+@media only screen and (max-width: 900px) {
+
+  .App {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .qrcode-imput {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .qrcode-output {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .div-btn{    
+    display: flex;
+    align-items: center;        
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;  
+  
+}
+
+.input-url{
+  width: auto;
+}
+
+}
+
+/*-----------------------------------
+==========End Mobile Screen========== 
+------------------------------------*/
