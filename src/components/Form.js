@@ -7,7 +7,7 @@ const Form = () => {
         <div className="input-Form">
 
             <div className="div-input">
-                <label htmlFor="">Din URL HEJ: </label> <br />
+                <label htmlFor="">Din URL: </label> <br />
                 <input type="url" placeholder="https://github.com" className="input-url"></input>
                 <InputColor />
                 <InputSize />
