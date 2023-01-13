@@ -15,10 +15,9 @@ Runs the app in the development mode.\
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `npm run deploy`
 
 
-Other information:
+## Other information:
 
 ### `npm install react-color`
 ### `npm instal axios`
