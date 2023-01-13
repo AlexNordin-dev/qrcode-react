@@ -21,4 +21,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 Other information:
 
 ### `npm install react-color`
+### `npm instal axios`
 ### `npm instal file-saver`
+
