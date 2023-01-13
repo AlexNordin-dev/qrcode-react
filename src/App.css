@@ -58,21 +58,31 @@
 
   }
 
-  .div-btn{    
+  .div-btn {
     display: flex;
-    align-items: center;        
+    align-items: center;
     justify-content: center;
     margin-top: auto;
-    width: 100%;  
-  
-}
+    width: 100%;
 
-.input-url{
-  width: auto;
-}
+  }
+
+  .input-url {
+    width: auto;
+  }
 
 }
 
 /*-----------------------------------
 ==========End Mobile Screen========== 
 ------------------------------------*/
+
+.error-message {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-size: 20px;
+  font-weight: 700;
+}
