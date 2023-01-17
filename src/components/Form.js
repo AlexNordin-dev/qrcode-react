@@ -1,20 +1,45 @@
 import { useContext } from "react";
 import InputColor from "./InputColor";
 import InputSize from "./InputSize";
-import InputEyes from "./InputEyes";
-import './Form.css';
 import { InputContext } from "../App";
 
 const Form = () => {
-    const { inputValue, setInputValue } = useContext(InputContext);
-    const { getQRCode } = useContext(InputContext);
-    const submitHandler = () => getQRCode();
+  const { inputValue, setInputValue } = useContext(InputContext);
+  const { getQRCode } = useContext(InputContext);
+  const submitHandler = () => getQRCode();
 
-
-    const inputHandler = e => setInputValue({
-        ...inputValue, url: e.target.value
-
+  const inputHandler = (e) =>
+    setInputValue({
+      ...inputValue,
+      url: e.target.value,
     });
+
+  return (
+    <div className="input-Form">
+      <div className="div-input">
+        <label htmlFor="">
+          <h3>Din URL:</h3>{" "}
+        </label>{" "}
+        <br />
+        <input
+          type="url"
+          placeholder="https://github.com"
+          className="input-url"
+          value={inputValue.url}
+          onChange={inputHandler}
+        />
+        <InputColor />
+        <InputSize />
+      </div>
+
+      <div className="div-btn">
+        <button onClick={submitHandler} className="btn-skapa color-3">
+          Skapa
+        </button>
+      </div>
+    </div>
+  );
+=======
     return (
         <div className="input-Form">
 
@@ -36,6 +61,7 @@ const Form = () => {
         </div>
 
     )
+
 };
 
 export default Form;
