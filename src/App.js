@@ -37,12 +37,7 @@ function App() {
         colorDark: inputValue.color,
         // qrFormat: 'svg',
         eyes: inputValue.eyes,
-        eye_inner: 'eyeInner0',
-        eye_inner: 'eyeInner1',
-        eye_inner: 'eyeInner2',
-        eye_outer: 'eyeOuter0',
-        eye_outer: 'eyeOuter1',
-        eye_outer: 'eyeOuter2',
+
         // backgroundColor: 'rgb(255,255,255)',
         //transparentBkg: false,
         qrCategory: 'url',
