@@ -28,7 +28,7 @@ const Form = () => {
             </div>
 
             <div className="div-btn">
-                <button onClick={submitHandler}
+                <button disabled={!inputValue.url} onClick={submitHandler}
                     className="btn-skapa color-3">Skapa</button>
             </div>
         </div>
