@@ -10,7 +10,8 @@ export const InputContext = createContext();
 function App() {
   const [inputValue, setInputValue] = useState({
     url: '',
-    color: ''
+    color: '',
+    eyes: ''
   });
 
   const [response, setResponse] = useState('');
@@ -34,9 +35,14 @@ function App() {
       data: {
         //size: 200,
         colorDark: inputValue.color,
-        // qrFormat: 'svg', 
-        // eye_outer: 'eyeOuter2',
-        //eye_inner: 'eyeInner1',
+        // qrFormat: 'svg',
+        eyes: inputValue.eyes,
+        eye_inner: 'eyeInner0',
+        eye_inner: 'eyeInner1',
+        eye_inner: 'eyeInner2',
+        eye_outer: 'eyeOuter0',
+        eye_outer: 'eyeOuter1',
+        eye_outer: 'eyeOuter2',
         // backgroundColor: 'rgb(255,255,255)',
         //transparentBkg: false,
         qrCategory: 'url',
