@@ -30,6 +30,7 @@ function App() {
         //size: 200,
         colorDark: inputValue.color,
         // qrFormat: 'svg',
+ eyes: inputValue.eyes,
 
         // backgroundColor: 'rgb(255,255,255)',
         //transparentBkg: false,
