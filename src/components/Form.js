@@ -14,6 +14,7 @@ const Form = () => {
       ...inputValue,
       url: e.target.value,
     });
+
   return (
     <div className="input-Form">
       <div className="div-input">
@@ -39,6 +40,28 @@ const Form = () => {
       </div>
     </div>
   );
+=======
+    return (
+        <div className="input-Form">
+
+            <div className="div-input">
+                <label htmlFor="">Din URL: </label> <br />
+                <input type="url" placeholder="https://github.com" className="input-url"
+                    value={inputValue.url}
+                    onChange={inputHandler}
+                />
+                <InputColor />
+                <InputSize />
+            </div>
+
+            <div className="div-btn">
+                <button disabled={!inputValue.url} onClick={submitHandler}
+                    className="btn-skapa color-3">Skapa</button>
+            </div>
+        </div>
+
+    )
+
 };
 
 export default Form;
