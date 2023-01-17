@@ -11,7 +11,8 @@ function App() {
   const [inputValue, setInputValue] = useState({
       url: '',
     color: '',
-    eyes: ''
+    eyes: '',
+    size: '',
   });
 
   const [response, setResponse] = useState("");
