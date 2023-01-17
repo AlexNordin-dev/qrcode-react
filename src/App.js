@@ -9,6 +9,9 @@ export const InputContext = createContext();
 
 function App() {
   const [inputValue, setInputValue] = useState({
+      url: '',
+    color: '',
+    eyes: ''
   });
 
   const [response, setResponse] = useState("");
