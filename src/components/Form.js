@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import InputColor from "./InputColor";
 import InputSize from "./InputSize";
-import "./Form.css";
 import { InputContext } from "../App";
 
 const Form = () => {
@@ -52,6 +51,7 @@ const Form = () => {
                 />
                 <InputColor />
                 <InputSize />
+                <InputEyes />
             </div>
 
             <div className="div-btn">

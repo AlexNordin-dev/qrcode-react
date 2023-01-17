@@ -9,9 +9,6 @@ export const InputContext = createContext();
 
 function App() {
   const [inputValue, setInputValue] = useState({
-    url: "",
-    color: "",
-    size: "",
   });
 
   const [response, setResponse] = useState("");
@@ -33,8 +30,7 @@ function App() {
         //size: 200,
         colorDark: inputValue.color,
         // qrFormat: 'svg',
-        // eye_outer: 'eyeOuter2',
-        //eye_inner: 'eyeInner1',
+
         // backgroundColor: 'rgb(255,255,255)',
         //transparentBkg: false,
         qrCategory: "url",
