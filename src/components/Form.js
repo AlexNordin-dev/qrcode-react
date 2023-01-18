@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import InputColor from "./InputColor";
 import InputSize from "./InputSize";
+import InputEyes from "./InputEyes";
 import { InputContext } from "../App";
+import './Form.css';
 
 const Form = () => {
   const { inputValue, setInputValue } = useContext(InputContext);
@@ -14,53 +16,29 @@ const Form = () => {
       url: e.target.value,
     });
 
+
   return (
     <div className="input-Form">
+
       <div className="div-input">
-        <label htmlFor="">
-          <h3>Din URL:</h3>{" "}
-        </label>{" "}
-        <br />
-        <input
-          type="url"
-          placeholder="https://github.com"
-          className="input-url"
+        <label htmlFor="inputurl" className="labelett">Din URL: </label> <br />
+        <input type="url" placeholder="https://github.com" className="input-url" id="inputurl"
           value={inputValue.url}
           onChange={inputHandler}
         />
         <InputColor />
         <InputSize />
+        <InputEyes />
       </div>
 
       <div className="div-btn">
-        <button onClick={submitHandler} className="btn-skapa color-3">
-          Skapa
-        </button>
+        <button disabled={!inputValue.url} onClick={submitHandler}
+          className="btn-skapa color-3">Skapa</button>
       </div>
+    
     </div>
-  );
-=======
-    return (
-        <div className="input-Form">
 
-            <div className="div-input">
-                <label htmlFor="">Din URL: </label> <br />
-                <input type="url" placeholder="https://github.com" className="input-url"
-                    value={inputValue.url}
-                    onChange={inputHandler}
-                />
-                <InputColor />
-                <InputSize />
-                <InputEyes />
-            </div>
-
-            <div className="div-btn">
-                <button disabled={!inputValue.url} onClick={submitHandler}
-                    className="btn-skapa color-3">Skapa</button>
-            </div>
-        </div>
-
-    )
+  )
 
 };
 

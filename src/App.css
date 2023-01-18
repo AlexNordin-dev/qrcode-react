@@ -15,8 +15,9 @@
   display: flex;
   margin: 5px;
   padding: 5px;
-  background-color: antiquewhite;
+  background-color: whitesmoke;
   flex-grow: 2;
+  border-radius: 20px;
 }
 
 .qrcode-output {
@@ -27,6 +28,7 @@
   padding: 5px;
   background-color: rgb(138, 143, 143);
   flex-grow: 1;
+  border-radius: 20px;
 }
 
 /*-----------------------------------
@@ -85,4 +87,19 @@
   color: orange;
   font-size: 20px;
   font-weight: 700;
+}
+
+.labelett{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+@media only screen and (min-width: 901px) {
+
+  .App {
+    display: flex;    
+    flex-direction: row;    
+  }
+
 }

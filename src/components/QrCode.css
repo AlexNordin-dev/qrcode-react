@@ -66,6 +66,9 @@
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75)
 }
 
-;
+.btn:disabled {
+    pointer-events: none;    
+    opacity: 0;
+  }
 
 /*_________________End Button______________________ */

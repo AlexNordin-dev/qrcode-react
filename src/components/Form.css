@@ -4,7 +4,8 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.btn-skapa{    
+
+.btn-skapa {
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -12,12 +13,12 @@
     cursor: pointer;
     margin: 20px;
     height: 55px;
-    text-align:center;
-    border-color:  lightyellow;
+    text-align: center;
+    border-color: lightyellow;
     background-size: 300% 100%;
 
     border-radius: 50px;
-  
+
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -25,7 +26,7 @@
 
 .btn-skapa:hover {
     background-position: 100% 0;
-    
+
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -34,7 +35,7 @@
 
 .btn-skapa:hover {
     background-position: 100% 0;
-    
+
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -51,23 +52,28 @@
 
 /*_________________End Button______________________ */
 
-.input-Form{
+.input-Form {
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 100%;
-    background-color: rgb(223, 222, 224);
+
 }
 
-.div-btn{    
+.div-btn {
     display: flex;
-    align-items: flex-end;        
+    align-items: flex-end;
     justify-content: flex-end;
     margin-top: auto;
-    width: 100%;  
-  
+    width: 100%;
+
 }
 
-.input-url{
-  width: 300px;
+.btn-skapa:disabled {
+    pointer-events: none;
+    opacity: 0.70;
+}
+
+.input-url {
+    width: 300px;
 }

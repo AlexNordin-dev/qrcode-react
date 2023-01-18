@@ -31,13 +31,28 @@ const QrCode = () => {
     )
 
   }
+
+
   return (
     <div className='qr-code'>
 
-      <img className='img-qr' src={response.url} alt="QR Code" />
+      {
+        (() => {
+          if (response.url === undefined) {
+            return (
+              <iframe src="https://embed.lottiefiles.com/animation/94946"></iframe>
+
+            )
+          } else {
+            return (
+              <img id='imgqrcode' className='img-qr' src={response.url} alt="QR Code" />
+            )
+          }
+        })()
+      }
 
       <div>
-        <button onClick={downloadImage} className='btn color-1'>Ladda ner</button>
+        <button disabled={!response.url} onClick={downloadImage} className='btn color-1'>Ladda ner</button>
       </div>
     </div>
   )

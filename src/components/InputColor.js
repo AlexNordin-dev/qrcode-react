@@ -17,7 +17,7 @@ const InputColor = () => {
   return (
     <div>
       <label className="Text">
-        <h3>Välj färg</h3>
+        <h3 className="labelett">Välj färg</h3>
       </label>
       <div className="Show">
         <div
