@@ -28,7 +28,7 @@ function App() {
       url: "https://qrtiger.com/api/qr/static",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer 5425ef50-9337-11ed-a156-215f15a33c89",
+        Authorization: "Bearer 2d8396c0-9780-11ed-8cbd-a5d3f1976ae8",
       },
       data: {
         size: inputValue.size,

@@ -24,7 +24,7 @@ const InputSize = () => {
       <select type="size" onClick={optionHandler} id="Storlek" className='inputSize'>
         <option value="100">100 x 100</option>
         <option value="300">300 x 300</option>
-        <option value="500">500 x 500</option>
+        <option value="500" selected>500 x 500</option>
         <option value="1000">1000 x 1000</option>
         <option value="5000">5000 x 5000</option>
       </select>
